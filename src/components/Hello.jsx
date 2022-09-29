@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Hello.css';
 
-const Hello = (props) => {
+const Hello = ({ name, age }) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -13,7 +13,7 @@ const Hello = (props) => {
 
   return (
   <h1 className={classes} onClick={handleClick}>
-    Hello {props.name}, in five years you'll be {props.age + 5} years old!
+    Hello {name}, in five years you'll be {age + 5} years old!
   </h1>
   );
 };
