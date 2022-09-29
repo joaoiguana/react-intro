@@ -7,7 +7,7 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello from React workshop.
+          Hello from React <workshop></workshop>.
         </p>
         <a
           className="App-link"
